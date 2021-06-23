@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox prefHeight="519.0" prefWidth="677.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="100.0" HBox.hgrow="ALWAYS">
+            <children>
+                <Label text="Digital">
+                    <VBox.margin>
+                        <Insets top="-100.0" />
+                    </VBox.margin>
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label fx:id="digit" text="23:36:15">
+                    <font>
+                        <Font size="36.0" />
+                    </font>
+                </Label>
+            </children>
+        </VBox>
+        <VBox fx:id="hboxForClock" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="20.0" HBox.hgrow="ALWAYS">
+            <children>
+                <ComboBox fx:id="combo" onHidden="#changeType" prefWidth="150.0" promptText="Type">
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin>
+                </ComboBox>
+            </children>
+         <padding>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </padding>
+        </VBox>
+    </children>
+</HBox>
